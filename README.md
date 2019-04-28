@@ -10,7 +10,7 @@ The code is optimized for repeated searching of the same string, e.g. walking th
 Usage example
 =============
 
-````
+```
 $search = new Approximate_Search( $patt, $max_err );
 if ( $search->too_short_err )
     $error = "Unable to search - use longer pattern " .
