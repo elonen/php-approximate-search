@@ -3,7 +3,7 @@ Approximate/fuzzy string search in PHP
 
 This PHP class, `approximate-search.php`, provides non-exact text search (often called fuzzy search or approximate matching).
 
-It allows you to specify a Levenshtein edit distance treshold, i.e. an error limit for a match. For example, a search for kamari with a treshold of 1 errors would match kamari, kammari, kaNari and kamar but not kaNar.
+It allows you to specify a Levenshtein edit distance treshold, i.e. an error limit for a match. For example, a search for kamari with a treshold of 1 errors would match `kamari`, `kammari` (1 add), `kaNari` (1 change) and `kamar` (1 delete) but not `kaNar` (1 change + 1 delete).
 
 The code is optimized for repeated searching of the same string, e.g. walking through rows of a database.
 
