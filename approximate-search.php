@@ -9,7 +9,7 @@
 //        $error = "Unable to search - use longer pattern " .
 //                 "or reduce error tolerance.";
 //
-//    while( $text = /* get some more text */ )
+//    while( $text = YOUR_FUNCTION_TO_GET_MORE_TEXT_TO_SEARCH() )
 //    {
 //        $matches = $search->search( $text );
 //        while( list($i,) = each($matches))
