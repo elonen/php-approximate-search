@@ -1,5 +1,7 @@
 <?php
 // A PHP class for approximate string searching of large text masses.
+// Copyright 2003-2006 Jarno Elonen <elonen@iki.fi> (Re)released under the MIT license.
+//
 // Usage example:
 //
 //    $search = new Approximate_Search( $patt, $max_err );
