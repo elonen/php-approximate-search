@@ -35,8 +35,8 @@ The program consist of two phases and some optimizations. Without going into det
 > 1.  **Pruning / filtering**. First partition the search pattern into k+2 parts. By the pigeonhole principle (of combinatorics), at least 2 of these parts must be uncorrupted in each occurrence of the pattern. We search the full text for these parts first and discard immediately those portions of the text that don't contain at least 2 of the patterns sufficiently near each other and in the correct order.
 > 2.  **Fine search**. For the remaining candidates, do a finer search using an (n+1) x (k+1) grid shaped nondeterministic state machine (NFA) whose horizontal edges represent character matches, vertical edges additions and diagonal edges deletions. This one's a bit difficult to explain without some drawings, so I'd suggest you take a look at, for example, _Baeza-Yates & Navarro: "Faster Approximate String Matching"_. It describes a very low level optimization method that I'm not using (as it would probably be _slower_ in PHP) but it also explains the basic version quite well.
 
-License
-=======
+MIT License
+===========
 
 Copyright 2003-2006 Jarno Elonen <elonen@iki.fi>
 
